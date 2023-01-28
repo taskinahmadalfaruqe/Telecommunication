@@ -1,0 +1,1209 @@
+/* ============================================================
+                    ALL COMMON CSS PART START
+============================================================ */
+:root{
+    --PRIMARYCOLOR: #007F5F;
+    --LIGHTCOLOR: rgba(72, 145, 117, 0.4);
+    --WHITE: #f1f1f1FF;
+    --BLACK: #000;
+    --ROBOTO: 'Roboto', sans-serif;
+    --OSWALD: 'Oswald', sans-serif;
+    --NAVSTIKY: rgba(255, 0, 0, 0.8);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+img{
+    vertical-align: middle;
+    object-fit: cover;
+    width: 100%;
+}
+ul,ol,li{
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a, a:hover{
+    text-decoration: none;
+}
+button:focus, select:focus, input:focus{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+body{
+    font-family: var(--ROBOTO);
+    background: var(--WHITE);
+    color: var(--BLACK);
+    scroll-behavior: smooth;
+}
+.common_hedding{
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.common_hedding h2{
+    font-family: var(--OSWALD);
+    font-weight: 600;
+    font-size: 50px;
+    color: var(--PRIMARYCOLOR);
+    margin-bottom: 40px;
+}
+.common_hedding p{
+    font-weight: 400;
+    font-size: 20px;
+}
+h4{
+    font-family: var(--OSWALD);
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--PRIMARYCOLOR);
+    transition: all linear .5s;
+    text-transform: uppercase;
+}
+/* ============================================================
+                    ALL COMMON CSS PART END
+============================================================ */
+
+
+/* ============================================================
+                   HEADER CSS PART START
+============================================================ */
+header {
+    /* background: var(--PRIMARYCOLOR); */
+    background: red;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+header .container .text {
+    font-family: var(--OSWALD);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: start;
+    width: 50%;
+    color: var(--WHITE);
+    /* background: pink; */
+}
+header .container .header_icon {
+    padding: 11px 0 10px;
+    width: 50%;
+    text-align: right;
+    display: flex;
+    justify-content: end;
+    gap: 35px;
+    /* background: red; */
+}
+header .container .header_icon a {
+    font-size: 20px;
+    color: var(--WHITE);
+}
+header .container .header_icon a:hover {
+    color: var(--PRIMARYCOLOR);
+}
+/* ============================================================
+                    HEADER CSS PART END
+============================================================ */
+
+
+/* ============================================================
+                    NAV BAR CSS PART START
+============================================================ */
+nav{
+    background: var(--PRIMARYCOLOR);
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: none;
+    color: var(--WHITE);
+}
+.nav-link {
+    font-family: var(--ROBOTO);
+    color: var(--WHITE);
+    font-weight: 600;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    margin: 0;
+    padding: 05px;
+    background: transparent;
+    margin-top: 8px;
+    background: var(--PRIMARYCOLOR);
+    border: none;
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+}
+.dropdown-item {
+    background: var(--PRIMARYCOLOR);
+    border-radius: 10px;
+    margin: 05px 0;
+    color: #fff;
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--bs-nav-link-hover-color);
+    color: var(--BLACK);
+}
+
+.nav_stiky{
+	width: 100%;
+	left: 0;
+	top: 0;
+    background: var(--NAVSTIKY);
+	position: fixed;
+    transition: all linear .3s;
+	padding: 15px 0;
+    z-index: 10;
+}
+.navbar-expand-lg.nav_stiky .navbar-nav .dropdown-menu {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    margin-top: 15px;
+    background: var(--NAVSTIKY);
+}
+.nav_stiky .dropdown-item {
+    color: #fff;
+    background: transparent;
+}
+.nav_stiky .dropdown-item:hover {
+    color: #fff;
+    background: var(--NAVSTIKY);
+}
+.top_up{
+    width: 45px;
+    height: 45px;
+    bottom: 70%;
+    right: 30px; 
+    transition: all linear .5s;
+    position: absolute;
+}
+.top_up a i{
+    opacity: 0;
+    visibility: hidden;
+}
+.top_up_show a i{
+    opacity: 1;
+    visibility: visible;
+    color: #fff;
+}
+.top_up_show{
+   width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--NAVSTIKY);
+    bottom: 30px;
+    right: 30px; 
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all linear .3s;
+    color: #fff;
+    z-index: 99999;
+}
+/* ============================================================
+                    NAV BAR CSS PART END
+============================================================ */
+
+
+/* ============================================================
+                    BANNER CSS PART START
+============================================================ */
+#banner{
+    background-image: url(../IMAGES/BANNER.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#banner .overlay{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 80px 0;
+}
+#banner .overlay .container{
+    padding: 10px;
+}
+#banner .overlay .text {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+#banner .overlay .text h1{
+    color: var(--WHITE);
+    font-family: var(--OSWALD);
+    font-weight: 600;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+#banner .overlay .text p{
+    color: var(--WHITE);
+    font-size: 20px;
+    padding: 20px;
+}
+#banner .overlay .text button{
+    padding: 10px 20px;
+    width: auto;
+    border-radius: 10px;
+    border: 3px solid var(--WHITE);
+    background: var(--PRIMARYCOLOR);
+    transition: all linear .5s;
+    margin-left: 30px;
+}
+#banner .overlay .text button a{
+    color: var(--WHITE);
+    font-size: 30px;
+    font-family: var(--OSWALD);
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all linear .5s;
+}
+#banner .overlay .text button:hover{
+    border: 3px solid var(--PRIMARYCOLOR);
+    background: var(--WHITE);
+}
+#banner .overlay .text button:hover a{
+    color: var(--PRIMARYCOLOR);
+}
+/* ============================================================
+                    BANNER CSS PART END
+============================================================ */
+
+
+/* ============================================================
+                    VIDEO-NOTICE CSS PART START
+============================================================ */
+#video_notice{
+    padding: 80px 0;
+}
+#video_notice .col-lg-6{
+    text-align: center;
+}
+#video_notice .col-lg-6 h4{
+    padding: 80px 0 30px;
+}
+
+/* VIDEO PART START  */
+#video_notice .video {
+    background: url(../IMAGES/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 100px 80px;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    border: 2px solid var(--PRIMARYCOLOR);
+    border-radius: 10px;
+    overflow: hidden;
+}
+#video_notice .video .venobox div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#video_notice .video .venobox .button{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+#video_notice .video .venobox .button i{
+    position: absolute;
+    color: var(--PRIMARYCOLOR);
+    font-size: 50px;
+    top: 25%;
+    left: 35%;
+}
+
+.spinner {
+    width: 100px;
+    height: 100px;
+    background-color: var(--PRIMARYCOLOR);
+    border-radius: 100%;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+} 
+@-webkit-keyframes sk-scaleout {
+    0% { -webkit-transform: scale(0) }
+    100% {
+      -webkit-transform: scale(1.0);
+      opacity: 0;
+    }
+}
+@keyframes sk-scaleout {
+    0% { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    } 100% {
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+      opacity: .35;
+    }
+}
+
+
+/* NOTICE PARI START  */
+#video_notice .notice_main{
+    width: 100%;
+    height: 304px;
+    border: 2px solid var(--PRIMARYCOLOR);
+    border-radius: 10px;
+    padding: 15px 30px;
+    position: relative;
+    overflow: hidden;
+}
+#video_notice .notice_main ul{
+   display: flex;
+   text-align: start;
+   justify-content: start;
+   gap: 20px;
+   flex-wrap: wrap;
+   flex-direction: column;
+   line-height: 2;
+}
+#video_notice .notice_main ul li{
+ display: flex;
+ justify-content: start;
+ text-align: start;
+ gap: 20px;
+}   
+#video_notice .notice_main ul li a{
+    display: block;
+    color: var(--BLACK);
+}
+#video_notice .notice_main ul li i{
+    color: var(--PRIMARYCOLOR);
+    font-size: 30px;
+}
+#video_notice .notice_main button{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: 2px solid var(--WHITE);
+    background: var(--PRIMARYCOLOR);
+    padding: 10px;
+    border-radius: 10px;
+    transition: all linear .5s;
+}
+#video_notice .notice_main button a{
+   color: var(--WHITE);
+   font-family: var(--OSWALD);
+   font-weight: 600;   
+   transition: all linear .5s;
+}
+#video_notice .notice_main button:hover{
+    border: 2px solid var(--PRIMARYCOLOR);
+    background: var(--WHITE);
+}
+#video_notice .notice_main button:hover a{
+   color: var(--PRIMARYCOLOR);  
+}
+/* ============================================================
+                    VIDEO-NOTICE CSS PART END
+============================================================ */
+
+/* ============================================================
+                    HISTORY CSS PART START
+============================================================ */
+#history{
+    padding: 80px 0;
+    /* background: gray; */
+}
+#history .history_text{
+   /*background: red;
+   */text-align: center;
+   padding: 20px 0 30px;
+   border: 2px solid var(--PRIMARYCOLOR);
+   border-radius:10px ;
+   box-shadow: 02px 02px 10px 02px var(--PRIMARYCOLOR);
+   transition: all linear .5s;
+   overflow: hidden;
+}
+#history .history_text:hover{
+    scale: 1.1;
+}
+#history .image{
+    width: 350px;
+    border: 2px solid var(--PRIMARYCOLOR);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+#history .history_text .text h3{
+    color: var(--PRIMARYCOLOR);
+    font-weight: 600;
+    font-family: var(--OSWALD);
+}
+#history .history_text .text p{
+    padding: 10px;
+}
+#history .history_text .text a{
+    border: 2px solid var(--WHITE);
+    padding: 10px 20px;
+    border-radius: 7px;
+    background: var(--PRIMARYCOLOR);
+    color: var(--WHITE);
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: .5s;
+}
+#history .history_text .text a:hover{
+    border: 2px solid var(--PRIMARYCOLOR);
+    background: var(--WHITE);
+    color: var(--PRIMARYCOLOR);
+}
+
+/* ============================================================
+                    HISTORY CSS PART END
+============================================================ */
+
+/* ============================================================
+                   BLOG CSS PART START
+============================================================ */
+#blog{
+    padding: 80px 0 20px;
+    /* background: pink; */
+    text-align: center;
+}
+#blog .col-lg-4{
+    margin-bottom: 60PX;
+}
+#blog .image{
+    width: 300px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+#blog .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+#blog .text button{
+    padding: 10px 20px;
+    border:none;
+    border-radius: 10px;
+    background: var(--PRIMARYCOLOR);
+    transition: all linear .5s;
+    border: 2px solid var(--WHITE);
+}
+#blog .text button a{
+   color: var(--WHITE);
+   font-size: 20px;
+   text-transform: uppercase; 
+   transition: all linear .5s;
+}
+#blog .text button:hover{
+    border:2px solid var(--PRIMARYCOLOR);
+    background: var(--WHITE);
+}
+#blog .text button:hover a{
+   color: var(--PRIMARYCOLOR); 
+}
+/* ============================================================
+                    BLOG CSS PART END
+============================================================ */
+
+
+/* ============================================================
+                    TEACHER CSS PART START
+============================================================ */
+#teacher{
+    padding: 80px 0;
+    /* background: yellow; */
+}
+#teacher .container{
+    /* border: 2px solid var(--PRIMARYCOLOR); */
+    position: relative;
+    padding-bottom: 70px;
+}
+#teacher .container button{
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    padding: 10px 30px;
+    background: var(--PRIMARYCOLOR);
+    border: 2px solid var(--WHITE);
+    border-radius: 10px;
+    transition: all linear .5s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+#teacher .container button:hover{
+    background: var(--WHITE);
+    border: 2px solid var(--PRIMARYCOLOR);
+}
+#teacher .container button a{
+    color: var(--WHITE);
+    font-size: 20px;
+    transition: all linear .5s;
+    text-transform: uppercase;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+#teacher .container button:hover a{
+    color: var(--PRIMARYCOLOR);
+}
+#teacher .col-lg-4{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+#teacher .teacher_item{
+    padding: 20px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px 5px var(--PRIMARYCOLOR);
+    transition: all linear .5s;
+    width: 100%;
+    margin-right: 30px;
+}
+#teacher .image{
+    margin: 0 auto;
+   height: 130px;
+   width: 130px;
+   border-radius: 50%;
+   position: relative;
+   overflow: hidden;
+   transition: all linear .5s;
+}
+#teacher .image img{
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--PRIMARYCOLOR);
+    border-radius: 50%;
+    transition: all linear .5s;
+}
+#teacher .image .overlay{
+    background: rgba(0, 0, 255, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    transition: all linear .5s;
+    opacity: 0;
+    border: 2px solid var(--WHITE);
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+#teacher .image .overlay .icon{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 17px;
+    justify-content: space-between;
+}
+#teacher .image .overlay .icon a {
+    width: 30px;
+    height: 30px;
+    gap: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--WHITE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#teacher .image .overlay .icon a i{
+    color: var(--WHITE);
+    font-size: 15px;
+}
+#teacher .text{
+    text-align: center;
+    padding: 20px 0 0 0;
+    transition: all linear .5s;
+}
+#teacher .text h4{
+ margin-bottom: 15px;
+}
+#teacher .text P{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+#teacher .text P a{
+    color: var(--BLACK);
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+#teacher .teacher_item:hover{
+    scale: 1.1;
+    background: var(--PRIMARYCOLOR);
+    box-shadow: 2px 2px 15px 5px var(--BLACK);
+    transition: all linear .5s;
+    color: var(--WHITE);
+}
+#teacher .teacher_item:hover .image {
+    border: 3px solid var(--BLACK);
+}
+#teacher .teacher_item:hover .image img{
+    border: 2px solid var(--WHITE);
+    border: none;
+    transition: all linear .5s;
+}
+#teacher .teacher_item:hover .image .overlay{
+    opacity: 1;
+    border: none;
+    transition: all linear .5s;
+    
+}
+#teacher .teacher_item:hover .image .overlay .icon a:hover {
+    background: transparent;
+    border: 2px solid var(--PRIMARYCOLOR);
+    transition: all linear .5s;;
+}
+#teacher .teacher_item:hover .image .overlay .icon a:hover i {
+    color: var(--PRIMARYCOLOR);
+    transition: all linear .5s;;
+}
+#teacher .teacher_item:hover .text{
+    color: var(--WHITE);
+}
+#teacher .teacher_item:hover .text h4{
+    color: var(--WHITE);
+}
+#teacher .teacher_item:hover .text p a{
+    color: var(--WHITE);
+}
+#teacher .teacher_item:hover .text p a:hover{
+    color: var(--NAVSTIKY);
+}
+
+
+/* ============================================================
+                    TEACHER CSS PART END
+============================================================ */
+
+
+/* ============================================================
+           COUNTER UP AND EVENT CSS PART START
+============================================================ */
+
+/* COUNTER UP START */
+#coun_event{
+    padding: 80PX 0;
+}
+#coun_event .item_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+#coun_event .item_main .item{
+    /* background: var(--PRIMARYCOLOR); */
+    /*height: 260px;*/
+    min-width: 250px;
+    padding: 40px 30px 30px;
+    border-radius:15px;
+    border: 2px solid var(--PRIMARYCOLOR);
+    transition: all linear .5s;
+    box-shadow: 2px 2px 10px 2px var(--PRIMARYCOLOR);
+}
+#coun_event .item_main .item .icon{
+    background: var(--WHITE);
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--PRIMARYCOLOR);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: var(--LIGHTCOLOR);
+    transition: all linear .5s;  
+}
+#coun_event .item_main .item .icon i{
+    color: var(--PRIMARYCOLOR);
+    font-size: 35px; 
+}
+#coun_event .item_main .item .icon svg{
+    fill: var(--PRIMARYCOLOR);
+    stroke: var(--PRIMARYCOLOR);
+}
+#coun_event .item_main .text h3 {
+    font-size: 30px;
+    padding: 20px 0 0;
+}
+#coun_event .item_main .text h3 span{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+#coun_event .item_main .text p{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+#coun_event .item_main .item:hover{
+    background: var(--PRIMARYCOLOR);
+}
+#coun_event .item_main .item:hover{
+    background: var(--PRIMARYCOLOR);
+}
+#coun_event .item_main .item:hover .icon{
+    background: var(--WHITE);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+/* COUNTER UP END */
+
+
+/* UPCOMMING EVENT START  */
+#coun_event #event_main{
+    /* background: rgb(99, 99, 99); */
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+#coun_event #event_main .last_event{
+    padding: 20px;
+    border: 2px solid var(--PRIMARYCOLOR);
+    box-shadow: 2px 2px 10px 2px var(--PRIMARYCOLOR);
+    border-radius: 15px;
+    min-width: 100%;
+}
+#coun_event #event_main .next_event{
+    padding: 30px 30px 40px;
+    border: 2px solid var(--PRIMARYCOLOR);
+    box-shadow: 2px 2px 10px 2px var(--PRIMARYCOLOR);
+    border-radius: 15px;
+    min-width: 100%;
+}
+#coun_event #event_main  p{
+    padding-top: 10px;
+    font-size: 15px;
+}
+#coun_event #event_main  p{
+    color: var(--BLACK);
+    text-transform: uppercase;
+}
+#coun_event #event_main button {
+    padding: 10px;
+    text-transform: uppercase;
+    background: var(--PRIMARYCOLOR);
+    border: 2px solid var(--WHITE);
+    border-radius: 10px;
+    transition: all linear .5s;
+}
+#coun_event #event_main button a{
+    color: var(--WHITE);
+    transition: all linear .5s;
+}
+#coun_event #event_main button:hover {
+    background: var(--WHITE);
+    border: 2px solid var(--PRIMARYCOLOR);
+}
+#coun_event #event_main button:hover a{
+    color: var(--PRIMARYCOLOR);
+}
+#coun_event #event_main .next_event .counter{
+    background: var(--LIGHTCOLOR);
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 15px;
+}
+#coun_event #event_main .next_event .counter ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+#coun_event #event_main .next_event .counter ul li span{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+/* UPCOMMING EVENT END  */
+
+/* ============================================================
+           COUNTER UP AND EVENT CSS PART END
+============================================================ */
+
+
+
+/* ============================================================
+                    SUBSCRIBE CSS PART START
+============================================================ */
+#subscribe{
+    padding: 80px 0px;
+    background-image: url(../images/Group\ 100.jpg);
+    background-repeat: no-repeat;
+    /* background-position: center top !important; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+#subscribe .container .common_hedding h2 {
+    color: var(--BLACK);
+    font-size: 40px;
+}
+#subscribe .container .common_hedding p{
+    color: var(--BLACK);
+    padding: 0 200px;
+}
+#subscribe .container .sub{
+    /* background: RED; */
+    margin: 0 auto;
+}
+#subscribe .container .sub form {
+    text-align: center;
+    padding: 20px 0;
+    background: var(--WHITE);
+    width: 460px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid var(--BLACK);
+}
+#subscribe .container .sub form input {
+    /* text-align: center; */
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid var(--PRIMARYCOLOR);
+    width: 400px;
+    color: var(--PRIMARYCOLOR);
+    margin-bottom: 10px;
+}
+#subscribe .container .sub form input::placeholder {
+    color: var(--PRIMARYCOLOR);
+    /* text-transform: uppercase; */
+}
+textarea{
+    border: 2px solid var(--PRIMARYCOLOR);
+    border-radius: 10px;
+    min-width: 400px;
+    padding: 10px 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+textarea::placeholder{
+    color: var(--PRIMARYCOLOR);
+}
+#subscribe .container .sub form button {
+    width: 150px;
+    text-align: center;
+    color: var(--WHITE);
+    text-transform: uppercase;
+    padding: 10px;
+    border: 2px solid var(--WHITE);
+    border-radius: 10px;
+    background: var(--PRIMARYCOLOR);
+    transition: all linear .5s;
+    font-family: var(--ROBOTO);
+    font-weight: 600;
+    margin-top: 15px;
+}
+#subscribe .container .sub form button:hover {
+    border: 2px solid var(--PRIMARYCOLOR);
+    background: var(--WHITE);
+    color: var(--PRIMARYCOLOR);
+}
+/* ============================================================
+                    SUBSCRIBE CSS PART END
+============================================================ */
+
+
+/* ============================================================
+                MAP & DAVOLOPAR CSS PART START
+============================================================ */
+#devolopar{
+    padding: 80px 0;
+    /* background: RED; */
+}
+#devolopar .row{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+#devolopar .row .col-lg-6 h4{
+    margin-bottom: 17px;
+}
+#devolopar .row .col-lg-6 .map{
+    overflow: hidden;
+    border: 2px solid var(--PRIMARYCOLOR);
+    border-radius: 10px;
+    padding: 32px 0 32px;
+    /* background: red; */
+}
+#devolopar .row .col-lg-6 .devlopar{
+    border: 2px solid var(--PRIMARYCOLOR);
+    border-radius: 10px;
+    padding: 20px 0 20px;
+    /* background: green; */
+}
+#devolopar .row .col-lg-6 .devlopar .picture{
+    width: 250px;
+    height: 250px;
+    border: 2px solid var(--NAVSTIKY);
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+}
+#devolopar .row .col-lg-6 .devlopar .picture::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 20px);
+    height: 60%;
+    bottom: -10px;
+    left: -10px;
+    background:var(--NAVSTIKY);
+    border-radius: 10px 10px 0 0;
+    z-index: -1;
+}
+#devolopar .row .col-lg-6 .devlopar .picture img{
+    overflow: hidden;
+    border-radius: 09px 09px 0 0;
+    transition: all linear .5s;
+}
+#devolopar .row  .picture .overlay{
+    background: rgba(0, 0, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    opacity: 0;
+    transition: all linear 1s;
+}
+#devolopar  .picture .overlay .icon{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#devolopar  .picture .overlay .icon a {
+    width: 40px;
+    height: 40px;
+    gap: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--WHITE);
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; transition: all linear .3s;
+}
+#devolopar  .picture .overlay .icon a i{
+    color: var(--WHITE);
+    font-size: 20px;
+    transition: all linear .3s;
+}
+#devolopar .row .col-lg-6 .devlopar .picture:hover .overlay{
+    opacity: 1;
+    border-radius: 09px 09px 0 0;
+    -webkit-border-radius: 09px 09px 0 0;
+    -moz-border-radius: 09px 09px 0 0;
+    -ms-border-radius: 09px 09px 0 0;
+    -o-border-radius: 09px 09px 0 0;
+}
+#devolopar .row .col-lg-6 .devlopar .picture:hover .overlay .icon{
+   transition: all linear .5s;
+}
+#devolopar .row  .picture .overlay .icon a:hover{
+   border: 2px solid var(--NAVSTIKY);
+}
+#devolopar .row  .picture .overlay .icon a:hover i{
+   color: var(--NAVSTIKY);
+}
+
+#devolopar .row .col-lg-6 .devlopar .text{
+    margin-top: 20px;
+}
+#devolopar .row .col-lg-6 .devlopar .text p{
+    color: var(--PRIMARYCOLOR);
+    font-family: var(--OSWALD);
+    font-weight: 700;
+    font-size: 25px;
+}
+#devolopar .row .col-lg-6 .devlopar .text p a{
+    color: var(--PRIMARYCOLOR);
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+#devolopar .row .col-lg-6 .devlopar .text p a:hover{
+    color: var(--BLACK);
+}
+
+/* ============================================================
+                 MAP & DAVOLOPAR CSS PART END
+============================================================ */
+
+
+
+/* ============================================================
+                    FOOTER CSS PART START
+============================================================ */
+
+footer {
+    padding: 00px 0 50px;
+    background-image: url(../images/Group\ 100.jpg);
+    background-repeat: no-repeat;
+    /* background-position: center top !important; */
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+footer h5{
+    /* background: pink;  */
+    width: 100%;
+    padding: 10px 0;
+    color: var(--WHITE);
+    font-family: var(--OSWALD);
+    font-weight: 500;
+    font-size: 30px;
+    padding-top: 80px;
+}
+
+
+footer .menu{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding: 0  10px 0 0;   
+    /* background: red; */
+}
+footer ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    /* background: #000; */
+}
+footer ul li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+}
+footer ul li a{
+    color: var(--WHITE);
+    font-size: 18px;
+    padding: 5px 0 0 0;
+    transition: all linear 0.5s ;
+}
+footer ul li a:hover{
+    color: var(--BLACK);
+}
+footer .contect ul li{
+    /* padding: 10px; */
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+footer .contect ul li a{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+footer .contect .icon{
+    min-width: 50px;
+    min-height: 50px;
+    background: var(--WHITE);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .contect .icon i{
+ color: var(--PRIMARYCOLOR);
+ font-size: 30px;
+}
+
+
+footer .gallery{
+    padding: 0px 0 0 20px;
+}
+footer .gallery .picture{
+    /* background: yellow; */
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+footer .gallery .picture img{
+    width: 160px;
+    border: 2px solid var(--BLACK);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.f_copy{
+    margin-top: 20px;
+    padding: 20px 0 4px;
+    text-align: center;
+    background: var(--WHITE);
+    color: var(--PRIMARYCOLOR);
+    font-family: var(--OSWALD);
+    font-weight: 600;
+}
+/* ============================================================
+                    FOOTER CSS PART END
+============================================================ */
+
+
+
+/* ============================================================
+                    NAV BAR CSS PART START
+============================================================ */
+/* ============================================================
+                    NAV BAR CSS PART END
+============================================================ */

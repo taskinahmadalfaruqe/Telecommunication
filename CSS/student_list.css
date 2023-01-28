@@ -1,0 +1,442 @@
+/* ALL COMMONE CSS PART START  */
+:root{
+    --PRIMARYCOLOR: #007F5F;
+    --LIGHTCOLOR: rgba(72, 145, 117, 0.4);
+    --WHITE: #f1f1f1FF;
+    --BLACK: #000;
+    --ROBOTO: 'Roboto', sans-serif;
+    --OSWALD: 'Oswald', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+img{
+    vertical-align: middle;
+    object-fit: cover;
+    width: 100%;
+}
+ul,ol,li{
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a, a:hover{
+    text-decoration: none;
+}
+button:focus, select:focus, input:focus{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+body{
+    font-family: var(--ROBOTO);
+    background: var(--LIGHTCOLOR);
+    color: var(--BLACK);
+    scroll-behavior: smooth;
+}
+.common_hedding{
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.common_hedding h2{
+    font-family: var(--OSWALD);
+    font-weight: 600;
+    font-size: 50px;
+    color: var(--PRIMARYCOLOR);
+    margin-bottom: 40px;
+}
+.common_hedding p{
+    font-weight: 400;
+    font-size: 20px;
+}
+h4{
+    font-family: var(--OSWALD);
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--PRIMARYCOLOR);
+    transition: all linear .5s;
+    text-transform: uppercase;
+}
+/* ALL COMMONE CSS PART END  */
+
+/* ============================================================
+                    STUDENT LIST PART START
+============================================================ */
+
+
+/*MENU SEARCH  PART START  */
+#student_list{
+    background: var(--LIGHTCOLOR);
+}
+#student_list .row{
+    margin: 0 auto;
+    width: 100%;
+}
+#student_list .row .col-lg-10{
+    background: var(--LIGHTCOLOR);
+    margin: 0 auto;
+}
+#student_list .row .col-lg-10 .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 15px;
+    border: 2px solid var(--PRIMARYCOLOR);
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: var(--WHITE);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#student_list .row .col-lg-10 .menu form input{
+    padding: 5px 20px;
+    border: 2px solid var(--PRIMARYCOLOR);
+    /* background: var(--LIGHTCOLOR); */
+    border-radius: 10px;
+}
+#student_list .row .col-lg-10 .menu form input::placeholder{
+    color: var(--PRIMARYCOLOR);
+}
+#student_list .row .col-lg-10 .menu form  button{
+    padding: 5px 20px;
+    border: 2px solid var(--PRIMARYCOLOR);
+    background: var(--PRIMARYCOLOR);
+    border-radius: 10px;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+#student_list .row .col-lg-10 .menu form  button i{
+    color: var(--WHITE);
+    transition: all linear .5s;
+}
+#student_list .row .col-lg-10 .menu form  button:hover{
+    padding: 5px 20px;
+    border: 2px solid var(--PRIMARYCOLOR);
+    background: var(--WHITE);
+    border-radius: 10px;
+}
+#student_list .row .col-lg-10 .menu form  button:hover i{
+    color: var(--PRIMARYCOLOR);
+}
+
+/*MENU STUDENT LIST PART START  */
+#student_list .row .col-lg-10 .students{
+    /* background: pink; */
+    margin: 0 auto;
+    width: 100%;
+}
+#student_list .row .col-lg-10 .students ul{
+    margin: 0 auto;
+    width: 100%;
+}
+#student_list .row .col-lg-10 .students #menu{
+    background: var(--WHITE);
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    text-align: center;
+    color: var(--PRIMARYCOLOR);
+    font-family: var(--OSWALD);
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 15px;
+    border: 2px solid var(--PRIMARYCOLOR);
+    border-radius: 10px;
+    overflow: hidden;
+}
+#student_list .row .col-lg-10 .students #menu .roll{
+    width: 112px;
+    /* background: pink; */
+}
+#student_list .row .col-lg-10 .students #menu .name{
+    width: 300px;
+    text-align: left;
+    /* background: red; */
+}
+#student_list .row .col-lg-10 .students #menu .reg{
+    width: 200px;
+    /* background: pink; */
+}
+#student_list .row .col-lg-10 .students #menu .shift{
+    width: 100px;
+    /* background: red; */
+}
+#student_list .row .col-lg-10 .students #menu .picture{
+    width: 170px;
+    /* background: pink; */
+}
+#student_list .row .col-lg-10 .students #menu span{
+    padding: 10px 0;
+}
+
+/* STUDENT LIST PART START  */
+#student_list .row .col-lg-10 .students #student{
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--PRIMARYCOLOR);
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#student_list .row .col-lg-10 .students #student a{
+color: var(--PRIMARYCOLOR);
+}
+#student_list .row .col-lg-10 .students #student span{
+    padding: 10px 0;
+}
+#student_list .row .col-lg-10 .students #student .roll{
+    width: 112px;
+    /* background: pink; */
+}
+#student_list .row .col-lg-10 .students #student .name{
+    width: 300px;
+    text-align: left;
+    padding: 0 0 0 10px;
+    text-transform: uppercase;
+    /* background: red; */
+}
+#student_list .row .col-lg-10 .students #student .reg{
+    width: 200px;
+    /* background: pink; */
+}
+#student_list .row .col-lg-10 .students #student .shift{
+    width: 100px;
+    /* background: red; */
+}
+#student_list .row .col-lg-10 .students #student .picture{
+    width: 170px;
+    padding: 05px 50px;
+}
+#student_list .row .col-lg-10 .students #student .picture img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    /* background: red; */
+}
+
+
+/* BACKGROUND PRIMARY COLOR START  */
+#student_list .row .col-lg-10 .students .student_01{
+    background: var(--PRIMARYCOLOR);
+    border: 2px solid var(--WHITE);
+}
+#student_list .row .col-lg-10 .students .student_01 img{
+    background: var(--PRIMARYCOLOR);
+    border: 2px solid var(--WHITE);
+}
+#student_list .row .col-lg-10 .students .student_01 span{
+    color: var(--WHITE);
+}
+#student_list .row .col-lg-10 .students .student_01 span a{
+    color: var(--WHITE);
+}
+
+
+/* BACKGROUND WHITE COLOR START  */
+#student_list .row .col-lg-10 .students .student_02{
+    background: var(--WHITE);
+    border: 2px solid var(--PRIMARYCOLOR);
+}
+#student_list .row .col-lg-10 .students .student_02 img{
+    background: var(--WHITE);
+    border: 2px solid var(--PRIMARYCOLOR);
+}
+/* ============================================================
+                    STUDENT LIST CSS PART END
+============================================================ */
+
+
+
+
+/* ============================================================
+                    NOTICE BOARD CSS PART START
+============================================================ */
+
+/* NOTICE MANU BAR PART START  */
+#student_list .row .col-lg-10 .notice {
+display: flex;
+justify-content: space-between;
+text-align: center;
+width: 100%;
+/* background: pink; */
+}
+#student_list .row .col-lg-10 .notice #notice_menu{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 2px solid var(--PRIMARYCOLOR);
+    padding: 10px ;
+    border-radius: 10px;
+    background: var(--WHITE);
+    margin-bottom: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#student_list .row .col-lg-10 .notice #notice_menu .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: purple; */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+#student_list .row .col-lg-10 .notice #notice_menu .icon i{
+    rotate: 90deg;
+    font-size: 30px;
+    color: var(--PRIMARYCOLOR);
+}
+#student_list .row .col-lg-10 .notice #notice_menu .notice_item{
+    width: 652px;
+    /* background: yellow; */
+}
+#student_list .row .col-lg-10 .notice #notice_menu .notice_item h4{
+    width: 100%;
+    text-align: center;
+}
+#student_list .row .col-lg-10 .notice #notice_menu .date{
+    width: 150px;
+    /* background: orange; */
+}
+
+
+/* ALL NOTICE LIST PART START  */
+#student_list .row .col-lg-10 .notice #student{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px ;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#student_list .row .col-lg-10 .notice #student .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+#student_list .row .col-lg-10 .notice #student .icon i {
+    rotate: 90deg;
+    font-size: 30px;
+}
+#student_list .row .col-lg-10 .notice #student .notice_item{
+    width: 652px;
+    text-align: start;
+    padding-left: 20px;
+}
+#student_list .row .col-lg-10 .notice #student .date{
+    width: 150px;
+    font-size: 25px;
+}
+
+
+/* BACKGROUND PRIMARY COLOR START  */
+#student_list .row .col-lg-10 .notice #student.student_01{
+    background: var(--PRIMARYCOLOR);
+    border: 2px solid var(--WHITE);
+}
+#student_list .row .col-lg-10 .notice #student.student_01 .icon {
+    background: var(--WHITE);
+}
+#student_list .row .col-lg-10 .notice #student.student_01 .icon i {
+    color: var(--PRIMARYCOLOR);
+}
+#student_list .row .col-lg-10 .notice #student.student_01 .notice_item a{
+   color: var(--WHITE);
+   transition: all linear .5s;
+}
+#student_list .row .col-lg-10 .notice #student .notice_item a:hover{
+    color: var(--BLACK);
+ }
+#student_list .row .col-lg-10 .notice #student.student_01 .date{
+    color: var(--WHITE);
+}
+
+/* BACKGROUND WHITE COLOR START  */
+#student_list .row .col-lg-10 .notice #student.student_02{
+    background: var(--WHITE);
+    border: 2px solid var(--PRIMARYCOLOR);
+}
+#student_list .row .col-lg-10 .notice #student.student_02 .icon {
+   background: var(--PRIMARYCOLOR);
+}
+#student_list .row .col-lg-10 .notice #student.student_02 .icon i {
+    color: var(--WHITE);
+}
+#student_list .row .col-lg-10 .notice #student.student_02 .notice_item a{
+    color: var(--PRIMARYCOLOR);
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+#student_list .row .col-lg-10 .notice #student.student_02 .notice_item a:hover{
+    color: var(--BLACK);
+}
+#student_list .row .col-lg-10 .notice #student.student_02 .date{
+    color: var(--PRIMARYCOLOR);
+}
+
+
+
+/* ============================================================
+                    NOTICE BOARD CSS PART END
+============================================================ */
+
+
+
+/* ============================================================
+                    NAV BAR CSS PART START
+============================================================ */
+/* ============================================================
+                    NAV BAR CSS PART END
+============================================================ */
+
+
+
+
+
+/* ============================================================
+                    NAV BAR CSS PART START
+============================================================ */
+/* ============================================================
+                    NAV BAR CSS PART END
+============================================================ */
