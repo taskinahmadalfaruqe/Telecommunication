@@ -52,7 +52,7 @@ $(function(){
 // ==================================
 //       COUNTDOWN JS PART START
 // ==================================
-var countDownDate= new Date ("Jan 26, 2023 00:00:00").getTime();
+var countDownDate= new Date ("Feb 26, 2023 00:00:00").getTime();
 var x= setInterval(function(){
   var today= new Date().getTime();
   var distance= countDownDate - today;
