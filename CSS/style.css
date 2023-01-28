@@ -255,7 +255,7 @@ nav{
     padding: 20px;
 }
 #banner .overlay .text button{
-    padding: 10px 20px;
+    padding: 05px 20px;
     width: auto;
     border-radius: 10px;
     border: 3px solid var(--WHITE);

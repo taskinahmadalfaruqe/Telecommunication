@@ -83,6 +83,7 @@ h4{
 #student_list .row .col-lg-10{
     background: var(--LIGHTCOLOR);
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 #student_list .row .col-lg-10 .menu{
     display: flex;
@@ -427,7 +428,7 @@ width: 100%;
     align-items: center;
     border: 2px solid var(--PRIMARYCOLOR);
     padding: 20px  50px;
-    margin-bottom: 20px;
+    margin-top: 50px;
     border-radius: 10px;
     transition: all linear .5s;
     -webkit-border-radius: 10px;
@@ -453,7 +454,7 @@ width: 100%;
     transition: all linear .5s;
 }
 #all_teacher .row .teacher_item .image .overlay{
-    background: rgba(0, 0, 255, 0.5);
+    background: var(--NAVSTIKY);
     position: absolute;
     bottom: 0;
     right: 0;
@@ -521,7 +522,7 @@ width: 100%;
     color: var(--WHITE);
 }
 #all_teacher .row .teacher_item:hover .image{
-    border: 3px solid var(--BLACK);
+    border: 2px solid var(--BLACK);
 }
 #all_teacher .row .teacher_item:hover .image img{
     border: 2px solid var(--WHITE);
@@ -551,14 +552,19 @@ width: 100%;
 }
 #all_teacher .row .teacher_item:hover .text p a{
     color: var(--WHITE);
-    transition: all linear 1s;
-    -webkit-transition: all linear 1s;
-    -moz-transition: all linear 1s;
-    -ms-transition: all linear 1s;
-    -o-transition: all linear 1s;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
 }
 #all_teacher .row .teacher_item:hover .text p a:hover{
     color: var(--NAVSTIKY);
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
 }
 
 /* ============================================================
