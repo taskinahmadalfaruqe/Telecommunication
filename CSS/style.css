@@ -687,11 +687,11 @@ nav{
 #teacher .teacher_item:hover .image .overlay .icon a:hover {
     background: transparent;
     border: 2px solid var(--PRIMARYCOLOR);
-    transition: all linear .5s;;
+    transition: all linear .5s;
 }
 #teacher .teacher_item:hover .image .overlay .icon a:hover i {
     color: var(--PRIMARYCOLOR);
-    transition: all linear .5s;;
+    transition: all linear .5s;
 }
 #teacher .teacher_item:hover .text{
     color: var(--WHITE);
