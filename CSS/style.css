@@ -9,6 +9,7 @@
     --ROBOTO: 'Roboto', sans-serif;
     --OSWALD: 'Oswald', sans-serif;
     --NAVSTIKY: rgba(255, 0, 0, 0.8);
+    --SHADOW: rgba(0, 127, 95, 0.3);
 }
 *{
     margin: 0;
@@ -131,6 +132,7 @@ nav{
     font-family: var(--ROBOTO);
     color: var(--WHITE);
     font-weight: 600;
+    /* color: yellow; */
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
@@ -155,6 +157,7 @@ nav{
 .nav-link:focus, .nav-link:hover {
     color: var(--bs-nav-link-hover-color);
     color: var(--BLACK);
+    /* color: yellow; */
 }
 
 .nav_stiky{
@@ -199,6 +202,7 @@ nav{
     opacity: 1;
     visibility: visible;
     color: #fff;
+    /* color: yellow; */
 }
 .top_up_show{
    width: 40px;
@@ -580,7 +584,7 @@ nav{
 #teacher .teacher_item{
     padding: 20px 10px 10px;
     border-radius: 10px;
-    box-shadow: 2px 2px 15px 5px var(--PRIMARYCOLOR);
+    box-shadow: 2px 2px 15px 5px var(--SHADOW);
     transition: all linear .5s;
     width: 100%;
     margin-right: 30px;
@@ -666,7 +670,7 @@ nav{
 #teacher .teacher_item:hover{
     scale: 1.1;
     background: var(--PRIMARYCOLOR);
-    box-shadow: 2px 2px 15px 5px var(--BLACK);
+    box-shadow: 2px 2px 15px 5px var(--SHADOW);
     transition: all linear .5s;
     color: var(--WHITE);
 }
@@ -1068,10 +1072,13 @@ textarea::placeholder{
     color: var(--PRIMARYCOLOR);
     font-family: var(--OSWALD);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 23px;
 }
 #devolopar .row .col-lg-6 .devlopar .text p a{
     color: var(--PRIMARYCOLOR);
+    font-family: var(--OSWALD);
+    font-weight: 700;
+    font-size: 25px;
     transition: all linear .5s;
     -webkit-transition: all linear .5s;
     -moz-transition: all linear .5s;
