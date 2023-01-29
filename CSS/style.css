@@ -41,7 +41,7 @@ button:focus, select:focus, input:focus{
 }
 body{
     font-family: var(--ROBOTO);
-    background: var(--WHITE);
+    background: var(--LIGHTCOLOR);
     color: var(--BLACK);
     scroll-behavior: smooth;
 }
@@ -433,7 +433,7 @@ nav{
    padding: 20px 0 30px;
    border: 2px solid var(--PRIMARYCOLOR);
    border-radius:10px ;
-   box-shadow: 02px 02px 10px 02px var(--PRIMARYCOLOR);
+   box-shadow: 02px 02px 10px 02px var(--SHADOW);
    transition: all linear .5s;
    overflow: hidden;
 }
@@ -739,7 +739,7 @@ nav{
     border-radius:15px;
     border: 2px solid var(--PRIMARYCOLOR);
     transition: all linear .5s;
-    box-shadow: 2px 2px 10px 2px var(--PRIMARYCOLOR);
+    box-shadow: 2px 2px 10px 2px var(--SHADOW);
 }
 #coun_event .item_main .item .icon{
     background: var(--WHITE);
@@ -811,14 +811,14 @@ nav{
 #coun_event #event_main .last_event{
     padding: 20px;
     border: 2px solid var(--PRIMARYCOLOR);
-    box-shadow: 2px 2px 10px 2px var(--PRIMARYCOLOR);
+    box-shadow: 2px 2px 10px 2px var(--SHADOW);
     border-radius: 15px;
     min-width: 100%;
 }
 #coun_event #event_main .next_event{
     padding: 30px 30px 40px;
     border: 2px solid var(--PRIMARYCOLOR);
-    box-shadow: 2px 2px 10px 2px var(--PRIMARYCOLOR);
+    box-shadow: 2px 2px 10px 2px var(--SHADOW);
     border-radius: 15px;
     min-width: 100%;
 }
@@ -961,29 +961,29 @@ textarea::placeholder{
                 MAP & DAVOLOPAR CSS PART START
 ============================================================ */
 #devolopar{
-    padding: 80px 0;
+    padding: 80px 0 40px;
     /* background: RED; */
 }
 #devolopar .row{
    display: flex;
    justify-content: center;
-   align-items: center;
+   align-items: start;
    text-align: center;
+   /* background: red; */
+}
+#devolopar .row .col-lg-6{
+    margin-bottom: 30px;
 }
 #devolopar .row .col-lg-6 h4{
-    margin-bottom: 17px;
+    margin-bottom: 30px;
 }
 #devolopar .row .col-lg-6 .map{
     overflow: hidden;
-    border: 2px solid var(--PRIMARYCOLOR);
-    border-radius: 10px;
-    padding: 32px 0 32px;
+    padding: 10px 0;
     /* background: red; */
 }
 #devolopar .row .col-lg-6 .devlopar{
-    border: 2px solid var(--PRIMARYCOLOR);
-    border-radius: 10px;
-    padding: 20px 0 20px;
+    padding: 10px;
     /* background: green; */
 }
 #devolopar .row .col-lg-6 .devlopar .picture{
@@ -1047,7 +1047,7 @@ textarea::placeholder{
     font-size: 20px;
     transition: all linear .3s;
 }
-#devolopar .row .col-lg-6 .devlopar .picture:hover .overlay{
+#devolopar .row .col-lg-6 .devlopar:hover .picture .overlay{
     opacity: 1;
     border-radius: 09px 09px 0 0;
     -webkit-border-radius: 09px 09px 0 0;
@@ -1068,17 +1068,22 @@ textarea::placeholder{
 #devolopar .row .col-lg-6 .devlopar .text{
     margin-top: 20px;
 }
+#devolopar .row .col-lg-6 .devlopar .text h4{
+    margin: 15px;
+}
 #devolopar .row .col-lg-6 .devlopar .text p{
     color: var(--PRIMARYCOLOR);
     font-family: var(--OSWALD);
     font-weight: 700;
-    font-size: 23px;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
 }
 #devolopar .row .col-lg-6 .devlopar .text p a{
     color: var(--PRIMARYCOLOR);
     font-family: var(--OSWALD);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 17px;
     transition: all linear .5s;
     -webkit-transition: all linear .5s;
     -moz-transition: all linear .5s;
