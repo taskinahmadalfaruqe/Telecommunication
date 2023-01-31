@@ -36,11 +36,13 @@ $(function(){
 // ==================================
 //       COUNTER UP JS PART START
 // ==================================
-    $(".counter").counterUp(); 
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+  });
 // ==================================
 //       COUNTER UP JS PART END
 // ==================================
-
 
 
 });
@@ -52,15 +54,15 @@ $(function(){
 // ==================================
 //       COUNTDOWN JS PART START
 // ==================================
-var countDownDate= new Date ("Feb 26, 2023 00:00:00").getTime();
-var x= setInterval(function(){
-  var today= new Date().getTime();
-  var distance= countDownDate - today;
+let countDownDate= new Date ("Feb 26, 2023 00:00:00").getTime();
+let x= setInterval(function(){
+  let today= new Date().getTime();
+  let distance= countDownDate - today;
   
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   document.getElementById("days").innerHTML = days;
   document.getElementById("hours").innerHTML = hours;

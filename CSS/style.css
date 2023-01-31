@@ -41,7 +41,7 @@ button:focus, select:focus, input:focus{
 }
 body{
     font-family: var(--ROBOTO);
-    background: var(--LIGHTCOLOR);
+    /* background: var(--LIGHTCOLOR); */
     color: var(--BLACK);
     scroll-behavior: smooth;
 }
