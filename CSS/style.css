@@ -2,14 +2,18 @@
                     ALL COMMON CSS PART START
 ============================================================ */
 :root{
-    --PRIMARYCOLOR: #007F5F;
-    --LIGHTCOLOR: rgba(72, 145, 117, 0.4);
+    /* --PRIMARYCOLOR: #007F5F; */
+    --PRIMARYCOLOR: #71bd44;
+    /* --LIGHTCOLOR: rgba(72, 145, 117, 0.4); */
+    --LIGHTCOLOR: rgba(112, 189, 68, 0.2);
     --WHITE: #f1f1f1FF;
     --BLACK: #000;
     --ROBOTO: 'Roboto', sans-serif;
     --OSWALD: 'Oswald', sans-serif;
-    --NAVSTIKY: rgba(255, 0, 0, 0.8);
-    --SHADOW: rgba(0, 127, 95, 0.3);
+    /* --NAVSTIKY: rgba(255, 0, 0, 0.8); */
+    /* --NAVSTIKY: rgba(160, 4, 139, 0.8); */
+    --NAVSTIKY: rgb(54, 169, 225);
+    --SHADOW: rgba(112, 189, 68, 0.2);
 }
 *{
     margin: 0;
@@ -78,8 +82,7 @@ h4{
                    HEADER CSS PART START
 ============================================================ */
 header {
-    /* background: var(--PRIMARYCOLOR); */
-    background: red;
+    background: var(--NAVSTIKY);
 }
 .header{
     display: flex;
@@ -262,7 +265,7 @@ nav{
     padding: 05px 20px;
     width: auto;
     border-radius: 10px;
-    border: 3px solid var(--WHITE);
+    border: 2px solid var(--WHITE);
     background: var(--PRIMARYCOLOR);
     transition: all linear .5s;
     margin-left: 30px;
@@ -271,12 +274,12 @@ nav{
     color: var(--WHITE);
     font-size: 30px;
     font-family: var(--OSWALD);
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     transition: all linear .5s;
 }
 #banner .overlay .text button:hover{
-    border: 3px solid var(--PRIMARYCOLOR);
+    border: 2px solid var(--PRIMARYCOLOR);
     background: var(--WHITE);
 }
 #banner .overlay .text button:hover a{
@@ -675,7 +678,7 @@ nav{
     color: var(--WHITE);
 }
 #teacher .teacher_item:hover .image {
-    border: 3px solid var(--BLACK);
+    border: 2px solid var(--BLACK);
 }
 #teacher .teacher_item:hover .image img{
     border: 2px solid var(--WHITE);
@@ -708,6 +711,7 @@ nav{
 }
 #teacher .teacher_item:hover .text p a:hover{
     color: var(--NAVSTIKY);
+    color: var(--BLACK);
 }
 
 
@@ -849,19 +853,19 @@ nav{
 #coun_event #event_main button:hover a{
     color: var(--PRIMARYCOLOR);
 }
-#coun_event #event_main .next_event .counter{
+#coun_event #event_main .next_event .coundown{
     background: var(--LIGHTCOLOR);
     margin-top: 20px;
     border-radius: 10px;
     padding: 15px;
 }
-#coun_event #event_main .next_event .counter ul{
+#coun_event #event_main .next_event .coundown ul{
     display: flex;
     gap: 20px;
     justify-content: center;
     text-align: center;
 }
-#coun_event #event_main .next_event .counter ul li span{
+#coun_event #event_main .next_event .coundown ul li span{
     display: flex;
     gap: 20px;
     justify-content: center;

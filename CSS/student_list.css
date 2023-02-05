@@ -1,12 +1,12 @@
 :root{
-    --PRIMARYCOLOR: #007F5F;
-    --LIGHTCOLOR: rgba(72, 145, 117, 0.4);
+    --PRIMARYCOLOR: #71bd44;
+    --LIGHTCOLOR: rgba(112, 189, 68, 0.2);
     --WHITE: #f1f1f1FF;
     --BLACK: #000;
     --ROBOTO: 'Roboto', sans-serif;
     --OSWALD: 'Oswald', sans-serif;
-    --NAVSTIKY: rgba(255, 0, 0, 0.8);
-    --SHADOW: rgba(0, 127, 95, 0.3);
+    --NAVSTIKY: rgb(54, 169, 225);
+    --SHADOW: rgba(112, 189, 68, 0.2);
 }
 *{
     margin: 0;

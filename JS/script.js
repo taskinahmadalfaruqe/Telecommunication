@@ -48,14 +48,11 @@ $(function(){
 });
 
 
-
-
-
 // ==================================
 //       COUNTDOWN JS PART START
 // ==================================
-let countDownDate= new Date ("Feb 26, 2023 00:00:00").getTime();
-let x= setInterval(function(){
+  let countDownDate= new Date ("jan 26, 2024 00:00:00").getTime();
+  let x= setInterval(function(){
   let today= new Date().getTime();
   let distance= countDownDate - today;
   
@@ -71,17 +68,15 @@ let x= setInterval(function(){
 
   if(distance < 0){
     clearInterval(x);
-    document.getElementById("days").innerHTML = "00";
-    document.getElementById("hours").innerHTML = "00";
-    document.getElementById("minutes").innerHTML = "00";
-    document.getElementById("seconds").innerHTML = "00";
+    document.getElementById("days").innerHTML = "THE";
+    document.getElementById("hours").innerHTML = "TIME";
+    document.getElementById("minutes").innerHTML = "IS";
+    document.getElementById("seconds").innerHTML = "OVER";
   };
 },1000);
 // ==================================
 //       COUNTDOWN JS PART END
 // ==================================
-
-
 
 
 
