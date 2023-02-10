@@ -231,7 +231,7 @@ nav{
                     BANNER CSS PART START
 ============================================================ */
 #banner{
-    background-image: url(../IMAGES/BANNER.jpg);
+    background-image: url(../IMAGES/banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -884,7 +884,7 @@ nav{
 ============================================================ */
 #subscribe{
     padding: 80px 0px;
-    background-image: url(../images/Group\ 100.jpg);
+    background-image: url(../IMAGES/back.jpg);
     background-repeat: no-repeat;
     /* background-position: center top !important; */
     background-size: cover;
@@ -1110,7 +1110,7 @@ textarea::placeholder{
 
 footer {
     padding: 00px 0 50px;
-    background-image: url(../images/Group\ 100.jpg);
+    background-image: url(../IMAGES/back.jpg);
     background-repeat: no-repeat;
     /* background-position: center top !important; */
     background-size: cover;
