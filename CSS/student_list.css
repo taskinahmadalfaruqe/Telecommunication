@@ -158,6 +158,7 @@ h4{
     border: 2px solid var(--PRIMARYCOLOR);
     border-radius: 10px;
     overflow: hidden;
+    justify-content: space-between;
 }
 #student_list .row .col-lg-10 .students #menu .roll{
     width: 112px;
@@ -188,7 +189,7 @@ h4{
 #student_list .row .col-lg-10 .students #student{
     padding: 0 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     color: var(--PRIMARYCOLOR);
@@ -427,6 +428,7 @@ width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: var(--WHITE);
     border: 2px solid var(--PRIMARYCOLOR);
     padding: 20px  50px;
     margin-top: 50px;
@@ -560,7 +562,7 @@ width: 100%;
     -o-transition: all linear .5s;
 }
 #all_teacher .row .teacher_item:hover .text p a:hover{
-    color: var(--NAVSTIKY);
+    color: var(--BLACK);
     transition: all linear .5s;
     -webkit-transition: all linear .5s;
     -moz-transition: all linear .5s;
