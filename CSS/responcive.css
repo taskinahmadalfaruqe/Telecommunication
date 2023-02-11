@@ -19,6 +19,12 @@
         bottom: 15px;
         right: 30px;
     }
+    .container{
+        width: 100%;
+        padding: 0px;
+        background: red;
+        margin: 0;
+    }
 
     /* HEADER PART START  */
     header .container{
@@ -108,7 +114,7 @@
         margin-bottom: 30px;
     }
     #history .history_text:hover{
-        scale: 0;
+        scale: 1;
     }
     #history .image {
         width: 100%;
