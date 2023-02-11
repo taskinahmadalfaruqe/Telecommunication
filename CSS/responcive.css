@@ -17,7 +17,7 @@
         width: 35px;
         height: 35px;
         bottom: 15px;
-        right: 15px;
+        right: 30px;
     }
 
     /* HEADER PART START  */
@@ -106,6 +106,9 @@
         /* background: red; */
         padding: 10px 10px 20px;
         margin-bottom: 30px;
+    }
+    #history .history_text:hover{
+        scale: 0;
     }
     #history .image {
         width: 100%;
