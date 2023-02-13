@@ -165,13 +165,14 @@ nav{
 }
 
 .nav_stiky{
-	width: 100%;
-	left: 0;
-	top: 0;
+    width: 100%;
+    left: 50%;
+    left: 0;
+    top: 0;
     background: var(--NAVSTIKY);
-	position: fixed;
+    position: fixed;
     transition: all linear .3s;
-	padding: 15px 0;
+    padding: 15px 0;
     z-index: 10;
 }
 .navbar-expand-lg.nav_stiky .navbar-nav .dropdown-menu {

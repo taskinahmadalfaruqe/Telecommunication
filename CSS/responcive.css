@@ -2,7 +2,9 @@
     body{
         overflow-x: hidden;
     }
-
+    .container{
+        max-width: 575px;
+    }
     .common_hedding p {
         font-weight: 400;
         font-size: 12px;
@@ -61,18 +63,13 @@
     }
     .nav_stiky{
         width: 100%;
-        left: 50%;
+        left: 0;
         top: 0;
         background: var(--NAVSTIKY);
-        position: fixed;
+        position: sticky;
         transition: all linear .3s;
         padding: 0;
         z-index: 10;
-        transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
 }
     .navbar-toggler {
         padding: 0;
@@ -282,6 +279,67 @@
         margin: 0px 0 00px;
     }
     /* DEVOLOPAR PART START */
+
+
+    /* FOOTER PART START */
+    footer h5 {
+        /* background: pink; */
+        width: 100%;
+        padding: 0px;
+        color: var(--WHITE);
+        font-family: var(--OSWALD);
+        font-weight: 500;
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    footer .contect ul li {
+        padding: 0px;
+        display: flex;
+        gap: 15px;
+        margin-bottom: 5px;
+    }
+    footer .contect ul h5 {
+        padding-top: 30px;
+    }
+    footer .contect .icon {
+        min-width: 35px;
+        min-height: 35px;
+    }
+    footer .contect .icon i {
+        font-size: 20px;
+    }
+    footer ul li a {
+        color: var(--WHITE);
+        font-size: 16px;
+        padding: 0px 0 0 0;
+        transition: all linear 0.5s;
+    }
+
+    footer .gallery {
+        padding: 0px 0 0 0px;
+    }
+    footer .gallery h5{
+        padding: 0px 0 0 07px;
+    }
+    footer .col-lg-6{
+        padding: 05px;
+    }
+    footer .gallery .picture {
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+    footer .gallery .picture img {
+        width: 150px;
+        border: 2px solid var(--BLACK);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .f_copy {
+        font-weight: 500;
+        padding: 05px 10px;
+    }
+    /* FOOTER PART END */
 
 }
 @media (min-width:576px) and (max-width:767.98px){
