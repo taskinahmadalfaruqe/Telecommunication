@@ -182,16 +182,20 @@ nav{
     background: transparent;
     margin-top: 15px;
     background: var(--NAVSTIKY);
-    width: 60%;
 }
 .nav_stiky .dropdown-item {
-    color: #fff;
+    color: var(--WHITE);
     background: transparent;
     width: 100%;
     flex-direction: column;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 .nav_stiky .dropdown-item:hover {
-    color: #fff;
+    color: var(--BLACK);
     background: var(--NAVSTIKY);
 }
 .top_up{
@@ -396,6 +400,15 @@ nav{
 #video_notice .notice_main ul li a{
     display: block;
     color: var(--BLACK);
+    font-weight: 500;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+#video_notice .notice_main ul li a:hover{
+    color: var(--PRIMARYCOLOR);
 }
 #video_notice .notice_main ul li i{
     color: var(--PRIMARYCOLOR);
@@ -1221,13 +1234,26 @@ footer .gallery .picture img{
 
 
 .f_copy{
-    margin-top: 20px;
-    padding: 20px 0 4px;
+    padding: 20px;
     text-align: center;
     background: var(--WHITE);
     color: var(--PRIMARYCOLOR);
     font-family: var(--OSWALD);
     font-weight: 600;
+}
+.f_copy p{
+    margin: 0;
+    padding: 0;
+}
+.f_copy p a{
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.f_copy p a:hover{
+    color: var(--BLACK);
 }
 /* ============================================================
                     FOOTER CSS PART END

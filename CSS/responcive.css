@@ -61,6 +61,12 @@
         width: 100%;
         padding: 10px;
     }
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+       width: 190px;
+    }
+    .dropdown-menu[data-bs-popper] {
+        top: 95%;
+    }
     .nav_stiky{
         width: 100%;
         left: 0;
@@ -70,7 +76,7 @@
         transition: all linear .3s;
         padding: 0;
         z-index: 10;
-}
+    }
     .navbar-toggler {
         padding: 0;
         border: none;
@@ -337,7 +343,11 @@
     }
     .f_copy {
         font-weight: 500;
-        padding: 05px 10px;
+        padding: 10px 20px;
+    }
+    .f_copy p {
+        padding: 10px 0;
+        font-size: 15px;
     }
     /* FOOTER PART END */
 
