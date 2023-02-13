@@ -58,6 +58,7 @@
     nav .container{
         width: 100%;
         padding: 10px;
+        background: yellow;
     }
     .nav_stiky{
         width: 100%;
@@ -68,7 +69,12 @@
         transition: all linear .3s;
         padding: 0;
         z-index: 10;
-    }
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
     .navbar-toggler {
         padding: 0;
         border: none;
