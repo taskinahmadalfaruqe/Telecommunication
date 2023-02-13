@@ -1,8 +1,12 @@
 @media (max-width:575.98px){
+    body{
+        overflow-x: hidden;
+    }
 
     .common_hedding p {
         font-weight: 400;
         font-size: 12px;
+        padding: 0 05px;
     }
     .common_hedding h2 {
         font-weight: 500;
@@ -18,12 +22,6 @@
         height: 35px;
         bottom: 15px;
         right: 30px;
-    }
-    .container{
-        width: 100%;
-        padding: 0px;
-        background: red;
-        margin: 0;
     }
 
     /* HEADER PART START  */
@@ -66,6 +64,7 @@
         font-size: 14px;
         padding: 0px;
         margin: 10px 0 15px;
+        padding: 0 05px;
     }
     #banner .overlay .text button {
         padding: 5px 12px;
@@ -85,9 +84,14 @@
     #video_notice .col-lg-6 h4 {
         padding: 0px 0 20px;
     }
-
+    #video_notice .video {
+        width: 100%;
+        margin: 0 auto;
+    }
     #notice{
         padding-top: 30px;
+        width: 100%;
+        margin: 0 auto;
     }
     #video_notice .notice_main {
         padding: 5px;
@@ -109,9 +113,10 @@
         padding: 30px 0 0px;
     }
     #history .history_text {
-        /* background: red; */
         padding: 10px 10px 20px;
         margin-bottom: 30px;
+        width: 100%;
+        margin: 0 auto 30px;
     }
     #history .history_text:hover{
         scale: 1;
