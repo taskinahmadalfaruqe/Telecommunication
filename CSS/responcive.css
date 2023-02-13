@@ -57,11 +57,24 @@
     }
     nav .container{
         width: 100%;
-        background: red;
         padding: 10px;
     }
-    .nav_stiky {
-	padding: 0;
+    .nav_stiky{
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: var(--NAVSTIKY);
+        position: fixed;
+        transition: all linear .3s;
+        padding: 0;
+        z-index: 10;
+    }
+    .navbar-toggler {
+        padding: 0;
+        border: none;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
     }
     /* NAV BAR PART END */
 

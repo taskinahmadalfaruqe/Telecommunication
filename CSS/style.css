@@ -181,10 +181,13 @@ nav{
     background: transparent;
     margin-top: 15px;
     background: var(--NAVSTIKY);
+    width: 60%;
 }
 .nav_stiky .dropdown-item {
     color: #fff;
     background: transparent;
+    width: 100%;
+    flex-direction: column;
 }
 .nav_stiky .dropdown-item:hover {
     color: #fff;
