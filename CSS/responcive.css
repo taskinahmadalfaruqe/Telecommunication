@@ -49,6 +49,21 @@
     }
     /* HEADER PART END */
 
+    /* NAV BAR PART START */
+    nav{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    nav .container{
+        width: 100%;
+        background: red;
+        padding: 10px;
+    }
+    .nav_stiky {
+	padding: 0;
+    }
+    /* NAV BAR PART END */
 
     /* BANNER PART START  */
     #banner .overlay {
